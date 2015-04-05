@@ -233,7 +233,7 @@ int misc_init_r(void)
 			eth_setenv_enetaddr("ethaddr", mac_addr);
 		}
 	}
-#if defined(CONFIG_BANANAPI) || defined(CONFIG_BANANAPRO)
+#if defined(CONFIG_BANANAPI) || defined(CONFIG_BANANAPRO) || defined(CONFIG_ORANGEPI) || defined(CONFIG_ORANGEPIMINI)
 	else {
 		unsigned char *p;
 		p = getenv("ethaddr");
